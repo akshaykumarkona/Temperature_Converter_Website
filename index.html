@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <center>
+        <h1>Temperature Converter</h1>
+        <div style="padding: 5px; position: relative; top: 20vh; font-weight: bolder; font-size: large"><span>Add temperature and select the unit for your input!</span></div>
+        <table style="width: 90%;">
+            <tbody>
+                <tr align="center">
+                    <td>
+                        <form id="TmpCvtr" style="border: 2px solid none; border-radius: 5px;box-shadow: 0 0 10px #003220; padding: 5px; position: relative; top: 25vh; width:50vw; background-color: #C3979F;">
+                            <table border="0">
+                                <tbody>
+                                    <tr style="padding: 10px;"></tr>
+                                    <tr>
+                                        <td> <span>Temperature:</span> </td>
+                                        <td> <span> <input id="inTemp" type="text" name="txtBox" size="30" /> </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span id="alert"></span></td>
+                                        <td>
+                                            <span><input class="ckBox" id="cbFahrenheit" type="checkbox" onchange="checkChange(this)">Celsius</span><br />
+                                            <span><input class="ckBox" id="cbCelsius" type="checkbox" onchange="checkChange(this)">Fahrenheit</span><br />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <span>Temperature in Celsius:</span> </td>
+                                        <td> <span> <input id="inCel" type="text" name="txtBox" size="30" /> </span> </td>
+                                    </tr>
+                                    <tr>
+                                        <td> <span>Temperature in Fahrenheit:</span> </td>
+                                        <td> <span> <input id="inFah" type="text" name="txtBox" size="30" /> </span> </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td style="padding: 10px;">
+                                            <input id="btnCon" type="button" value="CONVERT" name="button" />
+                                            <input id="btnReset" type="reset" value="RESET ALL" name="button" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    <script type="text/javascript" src="./main.js"></script>
+</body></html>
